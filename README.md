@@ -10,6 +10,11 @@ Requirements:
 - Ensure passwords are between 8 & 128 characters
 - Generate a random string of characters based on the user's input
 
+Updates:
+- Found bug: Lower password lengths didn't always include all types of characters
+- - Implemented fix to ensure at least 1 of the selected character types is included regardless of string size
+- - Needed to update iteration index starting point to be the difference to the length of the "basePW" string
+
 Workflow steps
 - Print some basic string to the text box utilizing the generate button
 - define variable for the length of a given password using a prompt
